@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Drop down</title>
+<style>
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header
+{
+	height: 100vh;
+	width: 100%;
+	background: url('img/img10.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+header nav
+{
+	height: 10vh;
+	width: 100%;
+}
+nav ul
+{
+	padding: 0;
+	list-style: none;
+}
+nav ul li 
+{
+	float: left;
+	width: 255px;
+	height: 10vh;
+	font-size: 28px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bolder;
+	cursor:pointer;
+	background: rgba(0, 176, 255,.8);
+}
+nav ul li ul li
+{
+	position: relative;
+	bottom: -2.5px;
+	font-size: 1em;
+	background: rgba(0, 176, 255,.8);
+}
+header nav ul li ul
+{
+	display: none;
+	transition: .2s linear;
+}
+nav ul li:hover > ul 
+{
+	display: block;
+}
+li:hover
+{
+	color:white;
+}
+nav ul li ul li:hover
+{
+	color: black;
+}
+nav ul li ul li
+{
+	position: relative;
+}
+nav ul li ul li ul
+{
+	position: absolute;
+	top:0;
+	left:100%;
+}
+nav ul li ul li ul li:hover
+{
+	color:white;
+}
+</style>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>
+					Activites
+					<ul>
+						<li>Playing</li>
+						<li>watching</li>
+						<li>
+							coding
+							<ul>
+								<li>Html</li>
+								<li>css</li>
+								<li>js</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					Contact
+					<ul>
+						<li>FaceBook</li>
+						<li>Instagram</li>
+						<li>Email</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+</body>
+</html>
